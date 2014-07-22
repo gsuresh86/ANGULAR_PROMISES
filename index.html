@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular Js</title>
+</head>
+<body>
+	<div ng-view></div>
+
+	<script src="js/lib/angular.js"></script>
+	<script src="js/lib/route.js"></script>
+	<script src="js/appMain.js"></script>
+
+	<script type="text/ng-template" id="home.html">
+		<div ng-controller="HomeCtrl">
+			<h1>Home Page</h1>
+			{{ctrlName}} <br/>
+			{{aboutName}}
+		</div>
+	</script>
+
+	<script type="text/ng-template" id="about.html">
+		<div ng-controller="HomeCtrl">
+			<h1>About Page</h1>
+			{{ctrlName}} <br/>
+			{{aboutName}}
+		</div>
+	</script>
+
+	<script type="text/ng-template" id="promise.html">
+		<div ng-controller="PromiseCtrl">
+			<h1>Promise</h1>
+			{{value}}
+		</div>
+	</script>
+
+</body>
+</html>
